@@ -1,4 +1,4 @@
-package br.com.felipe.vo;
+package br.com.felipe.vo.vo;
 
 public class Apple implements Fruit {
 

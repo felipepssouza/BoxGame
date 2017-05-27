@@ -18,7 +18,7 @@ buildscript {
 apply plugin: 'java'
 
 dependencies {
-    compile project(":config")
+    compile project(":usecase")
 }
 
 jar {
@@ -29,13 +29,6 @@ jar {
     }
 }
 
-
-/**
- * Run the main application
- */
-bootRun {
-    main = 'br.com.felipe.Application'
-}
 
 /**
  * Confs to all projects
@@ -54,9 +47,9 @@ allprojects {
         maven { url "http://repo1.maven.org/maven2/" }
     }
     dependencies {
-        // https://mvnrepository.com/artifact/org.codehaus.sonar/sonar-plugin-api
         compile group: 'org.codehaus.sonar', name: 'sonar-plugin-api', version: '5.1'
         testCompile group: 'junit', name: 'junit', version: '4.12'
+        compile group: 'org.hamcrest', name: 'hamcrest-all', version: '1.3'
     }
 
 }
@@ -64,7 +57,6 @@ allprojects {
 task codeCoverageReport(type: JacocoReport) {
     executionData fileTree(project.rootDir.absolutePath)
             .include("**/build/jacoco/*.exec")
-            .exclude("**/Application.java")
 
     subprojects.each {
         sourceSets it.sourceSets.main
@@ -73,7 +65,7 @@ task codeCoverageReport(type: JacocoReport) {
     reports {
         xml.enabled true
         xml.destination "${buildDir}/reports/jacoco/report.xml"
-        html.enabled false
+        html.enabled true
         csv.enabled false
     }
 }
