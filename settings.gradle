@@ -1,0 +1,4 @@
+rootProject.name = 'BoxGame'
+include 'config'
+include 'usecase'
+
