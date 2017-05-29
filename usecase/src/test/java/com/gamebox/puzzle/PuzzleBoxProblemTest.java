@@ -1,4 +1,4 @@
-package com.gamebox.components;
+package com.gamebox.puzzle;
 
 import com.boxgame.puzzle.PuzzleBoxProblem;
 import com.boxgame.structure.IncorrectPattern;

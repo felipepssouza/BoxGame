@@ -1,4 +1,4 @@
-package com.gamebox.components;
+package com.gamebox.puzzle;
 
 import com.boxgame.puzzle.PuzzleBoxSolver;
 import com.boxgame.structure.Label;
