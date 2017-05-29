@@ -1,6 +1,6 @@
 package com.gamebox.components;
 
-import com.boxgame.components.PuzzleBoxSolver;
+import com.boxgame.puzzle.PuzzleBoxSolver;
 import com.boxgame.structure.Label;
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package com.boxgame.components;
+package com.boxgame.puzzle;
 
 import com.boxgame.fruit.Fruit;
 import com.boxgame.structure.FruitBox;
@@ -15,7 +15,7 @@ public class PuzzleBoxSolver {
      * @return
      */
     public Label findBoxWithTheLabelThatAnswerOtherLabels(){
-        List<IncorrectPattern> incorrectPatterns = new InternBoxOrganizer().messBoxes();
+        List<IncorrectPattern> incorrectPatterns = new PuzzleBoxProblem().getPatternOfBoxesIncorrect();
 
         for (Label label: Label.values()) {
             boolean isThisLabelOnTheBoxHasOneTypeOfFruit = incorrectPatterns.stream().allMatch(incorrectPattern ->

@@ -10,6 +10,10 @@ public class FruitBox {
     private List<Fruit> fruits = new ArrayList<>();
     private Label label;
 
+    private FruitBox(){
+        super();
+    }
+
     public static FruitBox with(List<Fruit> fruits) {
         if(fruits == null || fruits.isEmpty())
             throw new IllegalArgumentException("Box should not be empty");
