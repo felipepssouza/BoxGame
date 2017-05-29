@@ -1,4 +1,4 @@
-# BoxGame
+# BoxGame [![travis-ci](https://travis-ci.org/felipepssouza/BoxGame.svg?branch=master)](https://travis-ci.org/felipepssouza/BoxGame) [![codecov](https://codecov.io/gh/felipepssouza/BoxGame/branch/master/graph/badge.svg)](https://codecov.io/gh/felipepssouza/BoxGame)
 
 Project responsible to solve the box with incorrect labels puzzle
 
