@@ -1,4 +1,6 @@
-package br.com.felipe.vo.vo;
+package com.boxgame.structure;
+
+import com.boxgame.fruit.Fruit;
 
 import java.util.ArrayList;
 import java.util.List;

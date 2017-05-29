@@ -1,4 +1,4 @@
-package br.com.felipe.vo.vo;
+package com.boxgame.structure;
 
 public enum Label {
 

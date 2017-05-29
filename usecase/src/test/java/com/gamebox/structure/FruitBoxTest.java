@@ -1,6 +1,10 @@
-package br.com.felipe.vo;
+package com.gamebox.structure;
 
-import br.com.felipe.vo.vo.*;
+import com.boxgame.fruit.Apple;
+import com.boxgame.fruit.Fruit;
+import com.boxgame.fruit.Orange;
+import com.boxgame.structure.FruitBox;
+import com.boxgame.structure.Label;
 import org.junit.Test;
 
 import java.util.ArrayList;
